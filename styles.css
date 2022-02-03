@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Quicksand:wght@400;500;600&display=swap');
+@font-face {
+    font-family: la-macchina;
+    src: url(resources/fonts/La-Macchina-Regular/La-Macchina-Regular.ttf);
+}
+
+@font-face {
+    font-family: vegur;
+    src: url(resources/fonts/Vegur.otf);
+}
+
+@font-face {
+    font-family: ferro-rosso;
+    src: url(resources/fonts/ferro-rosso/FerroRosso.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f2ef;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 2.8125rem;
+    font-family: 'Neonderthaw', cursive;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    border: 2px solid sienna;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+header video {
+    width: 100%;
+}
+
+main,
+nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cars img {
+    width: 85%;
+}
+
+.mission {
+    position: relative;
+}
+
+.mission-state {
+    position: absolute;
+    top:40%;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.car,
+#our-team {
+    margin-top: 85px;
+    border-bottom: 1px solid sienna;
+}
+
+#cars .card {
+    margin-bottom: 150px;
+}
+
+
+.lamborghini .make {
+    font-family: la-macchina;
+}
+
+.rolls-royce .make {
+    font-family: vegur;
+}
+
+.ferrari .make {
+    font-family: ferro-rosso;
+}
+
+.make {
+    font-size: 3rem;
+}
+
+#our-team img {
+    width: 12.5rem;
+    height: auto;
+}
+
+#locations {
+    margin-top: 85px;
+}
+
+#locations .cards{
+    display: flex;
+    justify-content: center;
+}
+
+#locations .card {
+    background-color: #D9D8D4;
+    width: 15%;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+footer p {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    #our-team .cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    #cars img {
+        width: 70%;
+    }
+}
